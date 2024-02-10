@@ -4,6 +4,11 @@ from django.utils.html import mark_safe
 from core import models
 
 
+class SocialLinkInline(admin.TabularInline):
+    model = models.SocialLink
+    extra = 1
+
+
 @admin.register(models.UserProfile)
 class UserProfileAdmin(admin.ModelAdmin):
     list_display = ('user', 'created_at', 'updated_at', 'get_image')
@@ -17,6 +22,8 @@ class UserProfileAdmin(admin.ModelAdmin):
 
     get_image.short_description = 'Аватарка'
 
+    inlines = [SocialLinkInline]
+
 
 @admin.register(models.SocialLink)
 class SocialLinkAdmin(admin.ModelAdmin):
@@ -26,6 +33,9 @@ class SocialLinkAdmin(admin.ModelAdmin):
 @admin.register(models.AdminProfileProxy)
 class AdminProfileProxyAdmin(admin.ModelAdmin):
     list_display = ('user', 'created_at', 'updated_at')
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).filter(user__is_superuser=True)
 
 
 @admin.register(models.Project)
