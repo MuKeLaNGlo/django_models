@@ -17,7 +17,10 @@
     ```
 Загружаем фикстуры
 -   `По одной/разом все` из папки `fixtures`
--   Все разом + пользователь admin ```bash python3 manage.py loaddata db_fixture.json ```
+-   Все разом + пользователь admin 
+```bash
+    python3 manage.py loaddata db_fixture.json
+```
 
 ## Основные моменты
 
