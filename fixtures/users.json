@@ -1,6 +1,6 @@
 [
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 1,
       "fields": {
         "username": "john_doe",
@@ -11,7 +11,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 2,
       "fields": {
         "username": "anna_smith",
@@ -22,7 +22,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 3,
       "fields": {
         "username": "alex_jones",
@@ -33,7 +33,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 4,
       "fields": {
         "username": "olga_kuznetsova",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 5,
       "fields": {
         "username": "peter_wilson",
@@ -55,7 +55,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 6,
       "fields": {
         "username": "natalia_ivanova",
@@ -66,7 +66,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 7,
       "fields": {
         "username": "michael_jackson",
@@ -77,7 +77,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 8,
       "fields": {
         "username": "kate_anderson",
@@ -88,7 +88,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 9,
       "fields": {
         "username": "igor_petrov",
@@ -99,7 +99,7 @@
       }
     },
     {
-      "model": "auth.user",
+      "model": "core.customuser",
       "pk": 10,
       "fields": {
         "username": "maria_gonzalez",
