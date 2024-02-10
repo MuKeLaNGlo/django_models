@@ -7,19 +7,19 @@
 
 ## Установка проекта
 -   ```bash
-    python3.10 -m venv venv
-    ```
+python3.10 -m venv venv
+```
 -   ```bash
-    source venv/bin/activate
-    ```
+source venv/bin/activate
+```
 -   ```bash
-    pip install -r requirements.txt
-    ```
+pip install -r requirements.txt
+```
 Загружаем фикстуры
 -   `По одной/разом все` из папки `fixtures`
 -   Все разом + пользователь admin 
 ```bash
-    python3 manage.py loaddata db_fixture.json
+python3 manage.py loaddata db_fixture.json
 ```
 
 ## Основные моменты
