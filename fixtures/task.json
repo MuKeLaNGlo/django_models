@@ -1,0 +1,242 @@
+[
+    {
+      "model": "core.task",
+      "pk": 1,
+      "fields": {
+        "project": 1,
+        "title": "Разработка функционала авторизации",
+        "description": "Необходимо реализовать систему авторизации для пользователей.",
+        "status": "todo",
+        "assigned_to": 1,
+        "created_at": "2022-02-28T08:45:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 2,
+      "fields": {
+        "project": 1,
+        "title": "Оптимизация базы данных",
+        "description": "Произвести оптимизацию и улучшение производительности базы данных.",
+        "status": "in_progress",
+        "assigned_to": 2,
+        "created_at": "2022-03-01T10:15:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 3,
+      "fields": {
+        "project": 2,
+        "title": "Интеграция платежной системы",
+        "description": "Подключить платежную систему для обработки транзакций.",
+        "status": "done",
+        "assigned_to": 3,
+        "created_at": "2022-03-02T12:30:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 4,
+      "fields": {
+        "project": 2,
+        "title": "Тестирование безопасности",
+        "description": "Провести аудит безопасности приложения и устранить выявленные уязвимости.",
+        "status": "todo",
+        "assigned_to": 4,
+        "created_at": "2022-03-03T14:45:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 5,
+      "fields": {
+        "project": 3,
+        "title": "Разработка мобильного приложения",
+        "description": "Создать мобильное приложение для удобного доступа к сервису.",
+        "status": "in_progress",
+        "assigned_to": 5,
+        "created_at": "2022-03-04T16:20:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 6,
+      "fields": {
+        "project": 3,
+        "title": "Дизайн интерфейса",
+        "description": "Разработать красивый и интуитивно понятный дизайн интерфейса приложения.",
+        "status": "done",
+        "assigned_to": 6,
+        "created_at": "2022-03-05T18:35:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 7,
+      "fields": {
+        "project": 4,
+        "title": "Обучение персонала",
+        "description": "Провести обучение сотрудников новым функциям системы.",
+        "status": "todo",
+        "assigned_to": 7,
+        "created_at": "2022-03-06T20:50:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 8,
+      "fields": {
+        "project": 4,
+        "title": "Анализ пользовательских отзывов",
+        "description": "Проанализировать отзывы пользователей и внести необходимые изменения.",
+        "status": "in_progress",
+        "assigned_to": 8,
+        "created_at": "2022-03-07T22:05:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 9,
+      "fields": {
+        "project": 5,
+        "title": "Разработка API",
+        "description": "Создать API для взаимодействия с внешними сервисами.",
+        "status": "done",
+        "assigned_to": 9,
+        "created_at": "2022-03-08T23:20:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 10,
+      "fields": {
+        "project": 5,
+        "title": "Оптимизация интерфейса администратора",
+        "description": "Улучшить интерфейс администратора для удобного управления системой.",
+        "status": "todo",
+        "assigned_to": 1,
+        "created_at": "2022-03-09T01:35:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 11,
+      "fields": {
+        "project": 6,
+        "title": "Тестирование совместимости",
+        "description": "Проверить совместимость приложения с различными устройствами и браузерами.",
+        "status": "in_progress",
+        "assigned_to": 2,
+        "created_at": "2022-03-10T03:50:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 12,
+      "fields": {
+        "project": 6,
+        "title": "Реализация системы уведомлений",
+        "description": "Добавить систему уведомлений для пользователей.",
+        "status": "done",
+        "assigned_to": 3,
+        "created_at": "2022-03-11T06:05:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 13,
+      "fields": {
+        "project": 7,
+        "title": "Оптимизация кода",
+        "description": "Провести рефакторинг кода для повышения его читаемости и эффективности.",
+        "status": "todo",
+        "assigned_to": 4,
+        "created_at": "2022-03-12T08:20:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 14,
+      "fields": {
+        "project": 7,
+        "title": "Интеграция аналитики",
+        "description": "Подключить систему аналитики для отслеживания поведения пользователей.",
+        "status": "in_progress",
+        "assigned_to": 5,
+        "created_at": "2022-03-13T10:35:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 15,
+      "fields": {
+        "project": 8,
+        "title": "Разработка модуля чата",
+        "description": "Создать модуль чата для общения пользователей.",
+        "status": "done",
+        "assigned_to": 6,
+        "created_at": "2022-03-14T12:50:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 16,
+      "fields": {
+        "project": 8,
+        "title": "Обновление документации",
+        "description": "Обновить документацию с новыми функциями и изменениями.",
+        "status": "todo",
+        "assigned_to": 7,
+        "created_at": "2022-03-15T15:05:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 17,
+      "fields": {
+        "project": 9,
+        "title": "Тестирование производительности",
+        "description": "Провести тестирование производительности системы под нагрузкой.",
+        "status": "in_progress",
+        "assigned_to": 8,
+        "created_at": "2022-03-16T17:20:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 18,
+      "fields": {
+        "project": 9,
+        "title": "Добавление нового функционала",
+        "description": "Добавить новый функционал по запросам пользователей.",
+        "status": "done",
+        "assigned_to": 9,
+        "created_at": "2022-03-17T19:35:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 19,
+      "fields": {
+        "project": 10,
+        "title": "Подготовка к релизу",
+        "description": "Подготовить систему к релизу и провести финальное тестирование.",
+        "status": "todo",
+        "assigned_to": 4,
+        "created_at": "2022-03-18T21:50:00Z"
+      }
+    },
+    {
+      "model": "core.task",
+      "pk": 20,
+      "fields": {
+        "project": 10,
+        "title": "Запуск рекламной кампании",
+        "description": "Запустить рекламную кампанию для привлечения новых пользователей.",
+        "status": "in_progress",
+        "assigned_to": 3,
+        "created_at": "2022-03-19T00:05:00Z"
+      }
+    }
+  ]

@@ -1,0 +1,332 @@
+[
+    {
+      "model": "core.taskcomment",
+      "pk": 1,
+      "fields": {
+        "task": 1,
+        "user": 1,
+        "text": "Отличная задача! Буду рад помочь в ее выполнении.",
+        "parent_comment": null,
+        "created_at": "2022-03-20T08:45:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 2,
+      "fields": {
+        "task": 1,
+        "user": 2,
+        "text": "Согласен, давайте скоординируем наши усилия.",
+        "parent_comment": 1,
+        "created_at": "2022-03-20T10:15:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 3,
+      "fields": {
+        "task": 2,
+        "user": 3,
+        "text": "Какие конкретно задачи по оптимизации мы рассматриваем?",
+        "parent_comment": null,
+        "created_at": "2022-03-20T12:30:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 4,
+      "fields": {
+        "task": 2,
+        "user": 4,
+        "text": "Думаю, стоит начать с индексации таблиц и оптимизации запросов.",
+        "parent_comment": 3,
+        "created_at": "2022-03-20T14:45:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 5,
+      "fields": {
+        "task": 3,
+        "user": 5,
+        "text": "Какие платежные системы рассматриваем для интеграции?",
+        "parent_comment": null,
+        "created_at": "2022-03-20T16:20:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 6,
+      "fields": {
+        "task": 3,
+        "user": 6,
+        "text": "PayPal и Stripe, например, подходят под наши требования.",
+        "parent_comment": 5,
+        "created_at": "2022-03-20T18:35:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 7,
+      "fields": {
+        "task": 4,
+        "user": 7,
+        "text": "Я могу взяться за тестирование безопасности, если нужно.",
+        "parent_comment": null,
+        "created_at": "2022-03-20T20:50:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 8,
+      "fields": {
+        "task": 4,
+        "user": 8,
+        "text": "Отлично, будем ждать ваших результатов.",
+        "parent_comment": null,
+        "created_at": "2022-03-20T22:05:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 9,
+      "fields": {
+        "task": 5,
+        "user": 9,
+        "text": "Какие основные функции должны поддерживаться в мобильном приложении?",
+        "parent_comment": null,
+        "created_at": "2022-03-21T23:20:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 10,
+      "fields": {
+        "task": 5,
+        "user": 10,
+        "text": "Навигация, просмотр профиля и управление аккаунтом.",
+        "parent_comment": null,
+        "created_at": "2022-03-21T01:35:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 11,
+      "fields": {
+        "task": 6,
+        "user": 1,
+        "text": "Какие цветовые схемы предпочтительны для дизайна интерфейса?",
+        "parent_comment": null,
+        "created_at": "2022-03-21T03:50:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 12,
+      "fields": {
+        "task": 6,
+        "user": 2,
+        "text": "Светлые и приглушенные цвета будут лучше всего смотреться.",
+        "parent_comment": null,
+        "created_at": "2022-03-21T06:05:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 13,
+      "fields": {
+        "task": 7,
+        "user": 3,
+        "text": "Можете подготовить материалы для обучения персонала?",
+        "parent_comment": null,
+        "created_at": "2022-03-21T08:20:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 14,
+      "fields": {
+        "task": 7,
+        "user": 4,
+        "text": "Да, я готов начать подготовку презентации.",
+        "parent_comment": null,
+        "created_at": "2022-03-21T10:35:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 15,
+      "fields": {
+        "task": 8,
+        "user": 5,
+        "text": "Какие отзывы мы получили от пользователей после последнего обновления?",
+        "parent_comment": null,
+        "created_at": "2022-03-21T12:50:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 16,
+      "fields": {
+        "task": 8,
+        "user": 6,
+        "text": "Большинство положительные, но есть и предложения по улучшению.",
+        "parent_comment": null,
+        "created_at": "2022-03-21T15:05:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 17,
+      "fields": {
+        "task": 9,
+        "user": 7,
+        "text": "Могу помочь с разработкой новых функций.",
+        "parent_comment": null,
+        "created_at": "2022-03-21T17:20:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 18,
+      "fields": {
+        "task": 9,
+        "user": 8,
+        "text": "Отлично, давайте обсудим, какие функции нужны в первую очередь.",
+        "parent_comment": null,
+        "created_at": "2022-03-21T19:35:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 19,
+      "fields": {
+        "task": 10,
+        "user": 9,
+        "text": "Кто занимается тестированием новых функций?",
+        "parent_comment": null,
+        "created_at": "2022-03-21T21:50:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 20,
+      "fields": {
+        "task": 10,
+        "user": 10,
+        "text": "Мы назначили ответственных за каждую функцию, следим за процессом.",
+        "parent_comment": null,
+        "created_at": "2022-03-21T00:05:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 21,
+      "fields": {
+        "task": 11,
+        "user": 1,
+        "text": "Какие сроки у нас на интеграцию аналитики?",
+        "parent_comment": null,
+        "created_at": "2022-03-22T02:20:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 22,
+      "fields": {
+        "task": 11,
+        "user": 2,
+        "text": "Планируем завершить интеграцию через две недели.",
+        "parent_comment": null,
+        "created_at": "2022-03-22T04:35:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 23,
+      "fields": {
+        "task": 12,
+        "user": 3,
+        "text": "У нас есть баг в модуле чата, нужно срочно исправить.",
+        "parent_comment": null,
+        "created_at": "2022-03-22T06:50:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 24,
+      "fields": {
+        "task": 12,
+        "user": 4,
+        "text": "Разбираемся и работаем над исправлением.",
+        "parent_comment": null,
+        "created_at": "2022-03-22T09:05:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 25,
+      "fields": {
+        "task": 13,
+        "user": 5,
+        "text": "Какие изменения в документации нужно внести?",
+        "parent_comment": null,
+        "created_at": "2022-03-22T11:20:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 26,
+      "fields": {
+        "task": 13,
+        "user": 6,
+        "text": "Добавить описание новых функций и обновленные скриншоты.",
+        "parent_comment": null,
+        "created_at": "2022-03-22T13:35:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 27,
+      "fields": {
+        "task": 14,
+        "user": 7,
+        "text": "Какие результаты тестирования производительности у нас есть?",
+        "parent_comment": null,
+        "created_at": "2022-03-22T15:50:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 28,
+      "fields": {
+        "task": 14,
+        "user": 8,
+        "text": "Показатели улучшились после оптимизации запросов.",
+        "parent_comment": null,
+        "created_at": "2022-03-22T18:05:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 29,
+      "fields": {
+        "task": 15,
+        "user": 9,
+        "text": "Модуль чата успешно разработан и готов к внедрению.",
+        "parent_comment": null,
+        "created_at": "2022-03-22T20:20:00Z"
+      }
+    },
+    {
+      "model": "core.taskcomment",
+      "pk": 30,
+      "fields": {
+        "task": 15,
+        "user": 10,
+        "text": "Отличная новость! Давайте планировать следующий этап работ.",
+        "parent_comment": null,
+        "created_at": "2022-03-22T22:35:00Z"
+      }
+    }
+  ]
