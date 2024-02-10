@@ -83,6 +83,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+AUTH_USER_MODEL = 'core.CustomUser'
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
