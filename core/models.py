@@ -1,5 +1,17 @@
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 from django.db import models
+
+
+# Переопределил модель пользователя, чтобы поменять метод __str__
+class CustomUser(AbstractUser):
+    def __str__(self):
+        full_name = f"{self.first_name} {self.last_name}"
+        return full_name.strip() if full_name.strip() else self.username
+
+    class Meta:
+        verbose_name = 'пользователь'
+        verbose_name_plural = 'пользователи'
+        ordering = ('first_name', 'last_name', 'date_joined')
 
 
 class TimeStampedModel(models.Model):
@@ -11,16 +23,28 @@ class TimeStampedModel(models.Model):
 
 
 class UserProfile(TimeStampedModel):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     bio = models.TextField('описание пользователя в профиле (биография)', blank=True)
     avatar = models.ImageField('аватар', upload_to='avatars/', blank=True)
-    social_links = models.ManyToManyField('SocialLink', related_name='user_profiles', blank=True)
+    social_links = models.ManyToManyField(
+        'SocialLink',
+        related_name='user_profiles',
+        blank=True,
+        verbose_name='ссылки на социальные сети'
+    )
     phone_number = models.CharField('номер телефона', max_length=15, blank=True)
     birthdate = models.DateField('дата рождения', null=True, blank=True)
 
     class Meta:
         verbose_name = 'профиль пользователя'
         verbose_name_plural = 'профили пользователей'
+        ordering = ('user',)
+
+    def __str__(self) -> str:
+        return self.user_fio()
+
+    def user_fio(self) -> str:
+        return f'{self.user.first_name} {self.user.last_name}'
 
 
 class SocialLink(models.Model):
@@ -29,8 +53,11 @@ class SocialLink(models.Model):
     link = models.URLField('ссылка')
 
     class Meta:
-        verbose_name = 'социальная ссылка'
-        verbose_name_plural = 'социальные ссылки'
+        verbose_name = 'ссылка на социальную сеть'
+        verbose_name_plural = 'ссылки на социальные сети'
+
+    def __str__(self):
+        return self.user_profile.user_fio() + '      ' + self.platform_name
 
 
 class AdminProfileProxy(UserProfile):
@@ -55,9 +82,9 @@ class AdminProfileProxy(UserProfile):
 class Project(TimeStampedModel):
     name = models.CharField('название', max_length=255)
     description = models.TextField('описание')
-    members = models.ManyToManyField(User, through='ProjectMembership', verbose_name='участники')
+    members = models.ManyToManyField(CustomUser, through='ProjectMembership', verbose_name='участники')
     creator = models.ForeignKey(
-        User,
+        CustomUser,
         on_delete=models.CASCADE,
         related_name='created_projects',
         verbose_name='создатель проекта'
@@ -69,9 +96,12 @@ class Project(TimeStampedModel):
         verbose_name_plural = 'проекты'
         ordering = ['-created_at']
 
+    def __str__(self) -> str:
+        return self.name
+
 
 class ProjectMembership(TimeStampedModel):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='участник')
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, verbose_name='участник')
     project = models.ForeignKey(Project, on_delete=models.CASCADE, verbose_name='проект')
     role = models.CharField('роль', max_length=50, choices=[('manager', 'Manager'), ('developer', 'Developer')])
 
@@ -85,13 +115,13 @@ class Task(TimeStampedModel):
     description = models.TextField('описание')
     project = models.ForeignKey(Project, on_delete=models.CASCADE, verbose_name='проект')
     assigned_to = models.ForeignKey(
-        User,
+        CustomUser,
         on_delete=models.CASCADE,
         related_name='assigned_tasks',
         verbose_name='ответственный'
     )
     collaborators = models.ManyToManyField(
-        User,
+        CustomUser,
         related_name='collaborating_tasks',
         blank=True,
         verbose_name='дополнительные сотрудники'
@@ -113,10 +143,13 @@ class Task(TimeStampedModel):
         verbose_name_plural = 'задачи'
         ordering = ['-due_date']
 
+    def __str__(self):
+        return self.title + ' для ' + self.project.__str__()
+
 
 class TaskComment(TimeStampedModel):
     task = models.ForeignKey(Task, on_delete=models.CASCADE, verbose_name='задача')
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='пользователь')
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, verbose_name='пользователь')
     text = models.TextField('текст')
     parent_comment = models.ForeignKey(
         'self',
@@ -130,6 +163,9 @@ class TaskComment(TimeStampedModel):
         verbose_name = 'комментарий к задаче'
         verbose_name_plural = 'комментарии к задачам'
         ordering = ['-created_at']
+
+    def __str__(self) -> str:
+        return self.user.__str__() + ': ' + self.text
 
 
 class TaskMedia(TimeStampedModel):
