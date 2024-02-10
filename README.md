@@ -7,14 +7,17 @@
 
 ## Установка проекта
 -   ```bash
-python3.10 -m venv venv
-```
+    python3.10 -m venv venv
+    ```
 -   ```bash
-source venv/bin/activate
-```
+    source venv/bin/activate
+    ```
 -   ```bash
-pip install -r requirements.txt
-```
+    pip install -r requirements.txt
+    ```
+-   ```bash
+    python3 manage.py migrate
+    ```
 Загружаем фикстуры
 -   `По одной/разом все` из папки `fixtures`
 -   Все разом + пользователь admin 
