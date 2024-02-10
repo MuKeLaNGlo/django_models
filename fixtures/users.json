@@ -1,0 +1,113 @@
+[
+    {
+      "model": "auth.user",
+      "pk": 1,
+      "fields": {
+        "username": "john_doe",
+        "first_name": "Джон",
+        "last_name": "Доу",
+        "email": "john.doe@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 2,
+      "fields": {
+        "username": "anna_smith",
+        "first_name": "Анна",
+        "last_name": "Смит",
+        "email": "anna.smith@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 3,
+      "fields": {
+        "username": "alex_jones",
+        "first_name": "Алекс",
+        "last_name": "Джонс",
+        "email": "alex.jones@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 4,
+      "fields": {
+        "username": "olga_kuznetsova",
+        "first_name": "Ольга",
+        "last_name": "Кузнецова",
+        "email": "olga.kuznetsova@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 5,
+      "fields": {
+        "username": "peter_wilson",
+        "first_name": "Питер",
+        "last_name": "Уилсон",
+        "email": "peter.wilson@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 6,
+      "fields": {
+        "username": "natalia_ivanova",
+        "first_name": "Наталья",
+        "last_name": "Иванова",
+        "email": "natalia.ivanova@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 7,
+      "fields": {
+        "username": "michael_jackson",
+        "first_name": "Майкл",
+        "last_name": "Джексон",
+        "email": "michael.jackson@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 8,
+      "fields": {
+        "username": "kate_anderson",
+        "first_name": "Кейт",
+        "last_name": "Андерсон",
+        "email": "kate.anderson@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 9,
+      "fields": {
+        "username": "igor_petrov",
+        "first_name": "Игорь",
+        "last_name": "Петров",
+        "email": "igor.petrov@example.com",
+        "password": "hashed_password"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 10,
+      "fields": {
+        "username": "maria_gonzalez",
+        "first_name": "Мария",
+        "last_name": "Гонсалес",
+        "email": "maria.gonzalez@example.com",
+        "password": "hashed_password"
+      }
+    }
+]
+  

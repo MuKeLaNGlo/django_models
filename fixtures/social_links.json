@@ -1,0 +1,93 @@
+[
+    {
+      "model": "core.sociallink",
+      "pk": 1,
+      "fields": {
+        "user_profile": 1,
+        "platform_name": "Facebook",
+        "link": "https://www.facebook.com/johndoe"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 2,
+      "fields": {
+        "user_profile": 2,
+        "platform_name": "Twitter",
+        "link": "https://twitter.com/annasmith"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 3,
+      "fields": {
+        "user_profile": 3,
+        "platform_name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/alexjones"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 4,
+      "fields": {
+        "user_profile": 4,
+        "platform_name": "Instagram",
+        "link": "https://www.instagram.com/olgakuz"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 5,
+      "fields": {
+        "user_profile": 5,
+        "platform_name": "GitHub",
+        "link": "https://github.com/peterwilson"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 6,
+      "fields": {
+        "user_profile": 6,
+        "platform_name": "YouTube",
+        "link": "https://www.youtube.com/nataliavlogs"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 7,
+      "fields": {
+        "user_profile": 7,
+        "platform_name": "SoundCloud",
+        "link": "https://soundcloud.com/michaeljackson"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 8,
+      "fields": {
+        "user_profile": 8,
+        "platform_name": "Pinterest",
+        "link": "https://www.pinterest.com/kateanderson"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 9,
+      "fields": {
+        "user_profile": 9,
+        "platform_name": "Skype",
+        "link": "skype:igor_petrov"
+      }
+    },
+    {
+      "model": "core.sociallink",
+      "pk": 10,
+      "fields": {
+        "user_profile": 10,
+        "platform_name": "Snapchat",
+        "link": "https://www.snapchat.com/add/mariagon"
+      }
+    }
+  ]
+  

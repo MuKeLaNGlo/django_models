@@ -1,0 +1,122 @@
+[
+  {
+    "model": "core.project",
+    "pk": 1,
+    "fields": {
+      "name": "Проект 1",
+      "description": "Описание проекта 1",
+      "creator": 1,
+      "image": null,
+      "created_at": "2022-01-01T12:00:00Z",
+      "updated_at": "2022-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 2,
+    "fields": {
+      "name": "Проект 2",
+      "description": "Описание проекта 2",
+      "creator": 2,
+      "image": null,
+      "created_at": "2022-02-01T12:00:00Z",
+      "updated_at": "2022-02-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 3,
+    "fields": {
+      "name": "Проект 3",
+      "description": "Описание проекта 3",
+      "creator": 3,
+      "image": null,
+      "created_at": "2022-03-01T12:00:00Z",
+      "updated_at": "2022-03-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 4,
+    "fields": {
+      "name": "Проект 4",
+      "description": "Описание проекта 4",
+      "creator": 4,
+      "image": null,
+      "created_at": "2022-04-01T12:00:00Z",
+      "updated_at": "2022-04-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 5,
+    "fields": {
+      "name": "Проект 5",
+      "description": "Описание проекта 5",
+      "creator": 5,
+      "image": null,
+      "created_at": "2022-05-01T12:00:00Z",
+      "updated_at": "2022-05-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 6,
+    "fields": {
+      "name": "Проект 6",
+      "description": "Описание проекта 6",
+      "creator": 6,
+      "image": null,
+      "created_at": "2022-06-01T12:00:00Z",
+      "updated_at": "2022-06-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 7,
+    "fields": {
+      "name": "Проект 7",
+      "description": "Описание проекта 7",
+      "creator": 7,
+      "image": null,
+      "created_at": "2022-07-01T12:00:00Z",
+      "updated_at": "2022-07-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 8,
+    "fields": {
+      "name": "Проект 8",
+      "description": "Описание проекта 8",
+      "creator": 8,
+      "image": null,
+      "created_at": "2022-08-01T12:00:00Z",
+      "updated_at": "2022-08-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 9,
+    "fields": {
+      "name": "Проект 9",
+      "description": "Описание проекта 9",
+      "creator": 9,
+      "image": null,
+      "created_at": "2022-09-01T12:00:00Z",
+      "updated_at": "2022-09-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 10,
+    "fields": {
+      "name": "Проект 10",
+      "description": "Описание проекта 10",
+      "creator": 10,
+      "image": null,
+      "created_at": "2022-10-01T12:00:00Z",
+      "updated_at": "2022-10-01T12:00:00Z"
+    }
+  }
+]
