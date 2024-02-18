@@ -118,7 +118,9 @@ class Task(TimeStampedModel):
         CustomUser,
         on_delete=models.CASCADE,
         related_name='assigned_tasks',
-        verbose_name='ответственный'
+        verbose_name='ответственный',
+        null=True,
+        blank=True,
     )
     collaborators = models.ManyToManyField(
         CustomUser,
